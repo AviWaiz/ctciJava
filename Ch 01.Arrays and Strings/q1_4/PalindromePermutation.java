@@ -19,11 +19,9 @@ public class PalindromePermutation {
 				counts.put(c1, 1);
 			}
 		}
-		System.out.println(counts);
 		boolean hasOdd = false;
 		for (Map.Entry<Character, Integer> entry : counts.entrySet()){
 			Integer value = entry.getValue();
-			System.out.println(value);
 			if (value % 2 == 1) {
 				if (hasOdd) {
 					return false;
@@ -56,7 +54,7 @@ public class PalindromePermutation {
 		return countOdd <= 1;
 	}
 	public static void main(String[] args) {
-		String str = "Tact Coa";
+		String str = "Tact Cowoza";
 		System.out.println(isPalindrome(str));
 		System.out.println(isPalFast(str));
 	}
